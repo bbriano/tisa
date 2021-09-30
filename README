@@ -1,34 +1,21 @@
-Tisa
-====
-
 Tisa replace tab characters (ab)used for alignment with spaces.
 It only replace tab characters after the first non-tab character.
 Or in other words, Tisa preserves tab characters used for indentation.
 
-Synopsis
---------
+SYNOPSIS
+	$ tisa [ nspace ]
 
-	$ tisa [ nspace ] <file
-
-Examples
---------
-
+EXAMPLES
 Vim:
-
 	:execute '%!tisa ' . &ts
 
 Acme:
+	Edit ,|tisa $tabwidth
 
-	Edit ,|tisa 4
-
-Install
--------
-
+INSTALL
 	$ go install github.com/bbriano/tisa
 
-About
------
-
+ABOUT
 	T|ab
 	I|ndent
 	S|pace
